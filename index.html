@@ -51,12 +51,12 @@
 
     <section class="w-11/12 mx-auto py-5 bg-[#FFFFFF] space-y-5">
         <div>
-            <div class="space-y-5  p-6 ">
+            <div class="space-y-5  p-3 my-3">
                 <div class=" flex justify-between text-center items-center ">
                     <p class="font-semibold text-[20px] text-[#002C5C] py-6">Available Jobs</p>
                     <p>8 jobs</p>
                 </div>
-                <div>
+                <div class="">
                     <button onclick="showOnly('allApplication')" id="allApplication-btn"
                         class="btn btn-soft btn-primary btn-active">All</button>
                     <button onclick="showOnly('interview')" id="interview-btn"
@@ -196,19 +196,31 @@
     </section>
 
     <section id="rejected"
-        class="w-11/12 mx-auto py-5 bg-[#FFFFFF] shadow-[0_0_12px_rgba(0,0,0,0.08)]  my-5 text-center hidden">
+        class="w-11/12 mx-auto py-5 bg-[#FFFFFF]  hidden">
 
-        <img src="assets/jobs.png" alt="" class="mx-auto">
-        <p class="font-semibold text-[20px] text-[#002C5C] py-2">No jobs available</p>
-        <p class="leading-5 text-[#64748B]">Check back soon for new job opportunities</p>
+        <div class="no-job shadow-[0_0_12px_rgba(0,0,0,0.08)] my-5 py-5 text-center">
+            <img src="assets/jobs.png" alt="" class="mx-auto">
+            <p class="font-semibold text-[20px] text-[#002C5C] py-2 ">No jobs available</p>
+            <p class="leading-5 text-[#64748B]">Check back soon for new job opportunities</p>
+        </div>
+
+        <div id="reject-container" class="space-y-5 p-6">
+
+        </div>
 
 
     </section>
     <section id="interview"
-        class="w-11/12 mx-auto py-5 bg-[#FFFFFF] shadow-[0_0_12px_rgba(0,0,0,0.08)] my-5 text-center hidden ">
-        <img src="assets/jobs.png" alt="" class="mx-auto">
-        <p class="font-semibold text-[20px] text-[#002C5C] py-2 ">No jobs available</p>
-        <p class="leading-5 text-[#64748B]">Check back soon for new job opportunities</p>
+        class="w-11/12 mx-auto py-5 bg-[#FFFFFF]  hidden ">
+        <div class="no-job shadow-[0_0_12px_rgba(0,0,0,0.08)] my-5 py-5 text-center">
+            <img src="assets/jobs.png" alt="" class="mx-auto">
+            <p class="font-semibold text-[20px] text-[#002C5C] py-2 ">No jobs available</p>
+            <p class="leading-5 text-[#64748B]">Check back soon for new job opportunities</p>
+        </div>
+
+        <div id="interview-container" class="space-y-5 p-6">
+
+        </div>
     </section>
 
     <script src="scripts/machine.js"></script>
