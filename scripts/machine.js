@@ -31,6 +31,8 @@ function selected(btn, type) {
         const newInterview = document.createElement("div");
         newInterview.appendChild(updateJobCard);
         interviewContainer.append(newInterview)
+        const countEl = document.getElementById("interview-count");
+        countEl.innerText = Number(countEl.innerText) + 1;
     } else if (type === 'rejected') {
         document.querySelector("#rejected .no-job")?.classList.add("hidden");
         displayBtn.className = "btn btn-outline btn-error display-btn";
@@ -40,6 +42,8 @@ function selected(btn, type) {
         const newRejected = document.createElement("div");
         newRejected.appendChild(updateJobCard);
         rejectedContainer.append(newRejected)
+        const countEl = document.getElementById("rejected-count");
+        countEl.innerText = Number(countEl.innerText) + 1;
     }
 
 
