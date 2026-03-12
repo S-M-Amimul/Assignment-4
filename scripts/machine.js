@@ -55,3 +55,9 @@ function selected(btn, type) {
 
 }
 
+function deleteJob(btn) {
+
+    const jobCard = btn.closest('.job');
+    jobCard.remove();
+
+}
