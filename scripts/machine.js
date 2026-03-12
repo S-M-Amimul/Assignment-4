@@ -60,4 +60,7 @@ function deleteJob(btn) {
     const jobCard = btn.closest('.job');
     jobCard.remove();
 
+    // total count
+    const total = document.getElementById("total-count");
+    total.innerText = Number(total.innerText) - 1 ;
 }
