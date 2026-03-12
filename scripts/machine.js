@@ -46,6 +46,11 @@ function selected(btn, type) {
         countEl.innerText = Number(countEl.innerText) + 1;
     }
 
+    const buttons = jobCard.querySelectorAll('button');
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].disabled = true;
+    }
+
 
 
 }
